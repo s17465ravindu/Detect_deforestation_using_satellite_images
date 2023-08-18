@@ -61,13 +61,13 @@ def main():
     st.sidebar.markdown("(Only TIF format images are accepted)")
     
 
-    my_upload = st.sidebar.file_uploader("Upload an image", type=["tif"])
+    #my_upload = st.sidebar.file_uploader("Upload an image", type=["tif"])
    ''' visualize_tiff_images(my_upload)
 
-    if my_upload is not None:
-        visualize_tiff_images(my_upload)
-    else:
-        st.write("come to this 2")'''
+    #if my_upload is not None:
+        #visualize_tiff_images(my_upload)
+    #else:
+       # st.write("come to this 2")'''
 
 
 
