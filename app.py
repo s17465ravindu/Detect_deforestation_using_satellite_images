@@ -12,7 +12,7 @@ import numpy as np
 #from PIL import Image
 
  #load the model
-'''@st.cache(persist=True)
+@st.cache(persist=True)
 def prediction(mean_ndvi_value):
     file_name = 'deforestaion.pickle'
     with open(file_name, 'rb') as file:
@@ -50,7 +50,7 @@ def visualize_tiff_images(upload):
     with rasterio.open(upload) as src:
         #tif_data = src.read(1)
         tif_data = Image.open(upload)
-        st.image(tif_data)'''
+        st.image(tif_data)
 
 def main():
     st.title("Deforestation Detection - WebApp")
@@ -61,10 +61,10 @@ def main():
     st.sidebar.markdown("(Only TIF format images are accepted)")
     
 
-    '''my_upload = st.sidebar.file_uploader("Upload an image", type=["tif"])
+    my_upload = st.sidebar.file_uploader("Upload an image", type=["tif"])
     visualize_tiff_images(my_upload)
 
-    if my_upload is not None:
+    '''if my_upload is not None:
         visualize_tiff_images(my_upload)
     else:
         st.write("come to this 2")'''
