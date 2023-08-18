@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import rasterio 
+import rasterio 
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import plot_confusion_matrix, plot_roc_curve, plot_precision_recall_curve
@@ -41,7 +41,7 @@ def calculate_mean_ndvi(tiff_file):
         return masked_ndvi.mean()
      
 #Show masekd image
-'''def display_deforested_area(tiff_file):
+def display_deforested_area(tiff_file):
     with rasterio.open(tiff_file) as src:
         ndvi_data = src.read(1)
 
@@ -57,7 +57,7 @@ def visualize_tiff_images(upload):
     with rasterio.open(upload) as src:
         #tif_data = src.read(1)
         tif_data = Image.open(upload)
-        st.image(tif_data)'''
+        st.image(tif_data)
 
 def main():
     st.title("Deforestation Detection - WebApp")
