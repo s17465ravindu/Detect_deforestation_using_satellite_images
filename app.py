@@ -61,8 +61,7 @@ def main():
     st.sidebar.markdown("(Only TIF format images are accepted)")
     
 
-    my_upload = r'F:\deforestation-detection-master\data\tiff\ndvi_img_2019_03_27.tif'
-    #st.sidebar.file_uploader("Upload an image", type=["tif"])
+    my_upload = st.sidebar.file_uploader("Upload an image", type=["tif"])
    ''' visualize_tiff_images(my_upload)
 
     if my_upload is not None:
