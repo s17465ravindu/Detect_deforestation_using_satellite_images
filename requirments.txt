@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 rasterio 
-scikit-learn
+scikit-learn==0.24.2
 pickle
 matplotlib
 os
