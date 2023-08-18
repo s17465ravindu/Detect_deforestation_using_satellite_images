@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 #import rasterio 
-import sklearn
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import plot_confusion_matrix, plot_roc_curve, plot_precision_recall_curve
