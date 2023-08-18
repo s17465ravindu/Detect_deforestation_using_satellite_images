@@ -11,13 +11,6 @@ import matplotlib.pyplot as plt
 import os
 from PIL import Image
 
-def prediction(mean_ndvi_value):
-    file_name = 'deforestaion.pickle'
-    with open(file_name, 'rb') as file:
-        model = pickle.load(file)
-    pred_value = model.predict([[mean_ndvi_value]])
-    return pred_value
-
  #load the model
 @st.cache(persist=True)
 def prediction(mean_ndvi_value):
