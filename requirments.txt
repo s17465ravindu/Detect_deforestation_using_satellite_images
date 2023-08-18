@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+rasterio 
+scikit-learn
+pickle
+matplotlib
+os
+PIL
+requests
