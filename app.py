@@ -1,18 +1,18 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import rasterio 
+#import rasterio 
 #from sklearn.linear_model import LogisticRegression
 #from sklearn.model_selection import train_test_split
 #from sklearn.metrics import plot_confusion_matrix, plot_roc_curve, plot_precision_recall_curve
 #from sklearn.metrics import precision_score, recall_score 
-import pickle
-import matplotlib.pyplot as plt
-import os
-from PIL import Image
+#import pickle
+#import matplotlib.pyplot as plt
+#import os
+#from PIL import Image
 
  #load the model
-@st.cache(persist=True)
+'''@st.cache(persist=True)
 def prediction(mean_ndvi_value):
     file_name = 'deforestaion.pickle'
     with open(file_name, 'rb') as file:
@@ -50,7 +50,7 @@ def visualize_tiff_images(upload):
     with rasterio.open(upload) as src:
         #tif_data = src.read(1)
         tif_data = Image.open(upload)
-        st.image(tif_data)
+        st.image(tif_data)'''
 
 def main():
     st.title("Deforestation Detection - WebApp")
@@ -63,9 +63,9 @@ def main():
 
     my_upload = r'F:\deforestation-detection-master\data\tiff\ndvi_img_2019_03_27.tif'
     #st.sidebar.file_uploader("Upload an image", type=["tif"])
-    visualize_tiff_images(my_upload)
+   ''' visualize_tiff_images(my_upload)
 
-    '''if my_upload is not None:
+    if my_upload is not None:
         visualize_tiff_images(my_upload)
     else:
         st.write("come to this 2")'''
