@@ -5,6 +5,7 @@ import rasterio
 import pickle
 import matplotlib.pyplot as plt
 import os
+import sklearn
 from PIL import Image
 import tempfile
 import io
