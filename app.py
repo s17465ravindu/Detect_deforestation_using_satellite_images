@@ -1,4 +1,3 @@
-pip install rasterio
 import streamlit as st
 import pandas as pd
 import numpy as np
